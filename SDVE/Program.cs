@@ -1,4 +1,3 @@
-using SDVE.Models;
 using SDVE.UI;
 
 namespace SDVE;
@@ -10,9 +9,22 @@ static class Program
     {
         ApplicationConfiguration.Initialize();
 
-        // TODO (equipo): reemplazar CandidatosDemo por la carga real (CSV/JSON/BD)
-        var candidatos = CandidatosDemo.Obtener();
+        Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+        Application.ThreadException += (s, e) =>
+            MessageBox.Show("Ocurrió un error inesperado:\n" + e.Exception.Message,
+                "SDVE", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        Application.Run(new FormSeleccion(candidatos));
+        try
+        {
+            BaseDatos.Preparar();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("No se pudo abrir la base de datos:\n" + ex.Message,
+                "SDVE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+        }
+
+        Application.Run(new FormInicio());
     }
 }

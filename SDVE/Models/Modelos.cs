@@ -43,21 +43,3 @@ public static class ConvocatoriaInfo
         _ => Color.FromArgb(219, 39, 119)                               // rosa
     };
 }
-
-/// <summary>Datos de ejemplo para probar la interfaz. Tus compañeros los reemplazan por la carga real.</summary>
-public static class CandidatosDemo
-{
-    public static List<Candidato> Obtener() => new()
-    {
-        new() { Id = 1, Puesto = Convocatoria.SociedadAlumnos, Nombre = "Valeria Montoya Ruiz" },
-        new() { Id = 2, Puesto = Convocatoria.SociedadAlumnos, Nombre = "Diego Hernández Ortiz" },
-        new() { Id = 3, Puesto = Convocatoria.SociedadAlumnos, Nombre = "Camila Soto Vargas" },
-
-        new() { Id = 4, Puesto = Convocatoria.ConsejoUniversitario, Nombre = "Andrés Reyes Palacios" },
-        new() { Id = 5, Puesto = Convocatoria.ConsejoUniversitario, Nombre = "Mariana Lozano Cruz" },
-
-        new() { Id = 6, Puesto = Convocatoria.ConsejoRepresentantes, Nombre = "Luis Ángel Ramírez" },
-        new() { Id = 7, Puesto = Convocatoria.ConsejoRepresentantes, Nombre = "Sofía Gutiérrez Mena" },
-        new() { Id = 8, Puesto = Convocatoria.ConsejoRepresentantes, Nombre = "Emiliano Torres Ávila" },
-    };
-}

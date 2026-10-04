@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Drawing.Drawing2D;
 
 namespace SDVE.UI;
@@ -5,7 +6,9 @@ namespace SDVE.UI;
 /// <summary>Encabezado con degradado índigo → violeta y texto blanco.</summary>
 public class HeaderPanel : Panel
 {
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public string Titulo { get; set; } = "";
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public string Subtitulo { get; set; } = "";
 
     public HeaderPanel()
