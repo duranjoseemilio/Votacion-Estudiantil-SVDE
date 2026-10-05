@@ -427,3 +427,9 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Bases locales y archivos temporales de documentos
+*.db
+*.db-wal
+*.db-shm
+~$*
