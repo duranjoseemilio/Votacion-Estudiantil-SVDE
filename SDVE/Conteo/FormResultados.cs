@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -18,7 +18,6 @@ namespace SDVE
     }
 
     // Ventana del módulo 3: conteo y resultados.
-    // Para abrirla desde otro formulario:  new FormResultados().Show();
     public class FormResultados : Form
     {
         // Datos
@@ -47,7 +46,6 @@ namespace SDVE
 
         public FormResultados()
         {
-            // Persona 2: cuando exista la BD, estos métodos de DatosVotacion se cambian para leer de ahí
             alumnos = DatosVotacion.ObtenerAlumnos();
             votos = DatosVotacion.ObtenerVotos();
 
