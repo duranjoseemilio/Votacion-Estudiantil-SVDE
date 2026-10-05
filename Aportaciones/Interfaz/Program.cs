@@ -9,7 +9,6 @@ static class Program
     {
         ApplicationConfiguration.Initialize();
 
-        // Red de seguridad: cualquier error no previsto muestra un mensaje en lugar de cerrar la app
         Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
         Application.ThreadException += (s, e) =>
             MessageBox.Show("Ocurrió un error inesperado:\n" + e.Exception.Message,
@@ -17,7 +16,6 @@ static class Program
 
         try
         {
-            // Crea la base de datos y los datos de prueba la primera vez
             BaseDatos.Preparar();
         }
         catch (Exception ex)

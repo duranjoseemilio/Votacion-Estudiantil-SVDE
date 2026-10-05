@@ -3,7 +3,6 @@ using SDVE.Models;
 
 namespace SDVE.UI;
 
-/// <summary>Pantalla de inicio: votar o consultar resultados.</summary>
 public class FormInicio : Form
 {
     public FormInicio()
@@ -33,7 +32,6 @@ public class FormInicio : Form
         Controls.AddRange(new Control[] { header, btnVotar, btnResultados });
     }
 
-    /// <summary>Mensaje claro cuando la base de datos falla (bloqueada, dañada o sin esquema.sql).</summary>
     public static void MostrarErrorBD(string accion, Exception ex)
     {
         MessageBox.Show($"No se pudo {accion}.\n\nDetalle: {ex.Message}\n\n" +
@@ -89,7 +87,7 @@ public class FormInicio : Form
         {
             RepositorioVotacion.GuardarVotos(ident.IdAlumno, seleccion.VotosConfirmados);
         }
-        catch (SqliteException ex) when (ex.SqliteExtendedErrorCode == 1555)   // SQLITE_CONSTRAINT_PRIMARYKEY: doble voto
+        catch (SqliteException ex) when (ex.SqliteExtendedErrorCode == 1555)
         {
             MessageBox.Show("Este alumno ya tiene un voto registrado en alguna de las convocatorias elegidas.\n" +
                             "No se guardó ningún voto.", "Voto rechazado", MessageBoxButtons.OK, MessageBoxIcon.Warning);

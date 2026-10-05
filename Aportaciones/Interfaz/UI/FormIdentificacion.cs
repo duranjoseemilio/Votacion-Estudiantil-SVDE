@@ -1,6 +1,5 @@
 namespace SDVE.UI;
 
-/// <summary>El votante escribe su matrícula; se valida contra el padrón.</summary>
 public class FormIdentificacion : Form
 {
     private readonly TextBox _txtMatricula;

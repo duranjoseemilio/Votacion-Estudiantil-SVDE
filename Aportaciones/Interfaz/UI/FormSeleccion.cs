@@ -10,10 +10,8 @@ public class FormSeleccion : Form
     private readonly Button _btnContinuar;
     private readonly Label _lblHint;
 
-    /// <summary>Votos confirmados en la papeleta (solo si DialogResult = OK).</summary>
     public List<VotoEmitido> VotosConfirmados { get; private set; }
 
-    /// <param name="disponibles">Convocatorias activas en las que el alumno aún no ha votado.</param>
     public FormSeleccion(string nombreVotante, IEnumerable<Convocatoria> disponibles, IEnumerable<Candidato> candidatos)
     {
         _candidatos = candidatos.ToList();
