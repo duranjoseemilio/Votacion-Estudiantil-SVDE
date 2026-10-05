@@ -26,8 +26,8 @@ La restauracion inicial requiere Internet si los paquetes no estan disponibles l
 
 1. **Respaldo del repositorio completo:** se genera despues de integrar los cambios en main y se entrega por separado. No se incluye un respaldo dentro de si mismo.
 2. **Instalacion:** [instrucciones](Entregables/Entregable_2/Instalacion.md) y [descarga del paquete SDVE 1.0](https://github.com/duranjoseemilio/Votacion-Estudiantil-SVDE/releases/tag/v1.0.0).
-3. **Documentacion de usuario y tecnica:** [PDF](Entregables/Entregable_3/Entregable3.pdf) y [Word](Entregables/Entregable_3/Entregable3.docx).
+3. **Documentacion de usuario y tecnica:** [PDF](Entregables/Entregable_3/Entregable3.pdf) 
 4. **Presentacion del sistema:** [PDF con enlace al video](Entregables/Entregable_4/Entregable_4.pdf).
-5. **Reporte de participacion:** [PDF](Entregables/Entregable_5/Entregable5.pdf) y [Word](Entregables/Entregable_5/Entregable5.docx).
+5. **Reporte de participacion:** [PDF](Entregables/Entregable_5/Entregable5.pdf)
 
-No se incluyen en el codigo los resultados de compilacion (`bin`, `obj`), la configuracion local de Visual Studio (`.vs`) ni la base de datos personal con votos.
+
