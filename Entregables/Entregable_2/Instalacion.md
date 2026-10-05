@@ -1,10 +1,11 @@
 # Instalacion del SDVE
+Existen dos formas de utilizar el SDVE: si no contamos con herramientas de programación, podemos descargar el paquete que incluye la aplicación y su instalador. Si ya contamos con Visual Studio y el SDK de .NET 10, podemos descargar el código del repositorio, abrir el proyecto y ejecutarlo desde Visual Studio. Ambas opciones requieren Windows de 64 bits y se explican a continuación.
 
 ## Sin herramientas de programacion
 
 El paquete `Entregable_2_Instalacion.zip` incluye el programa, .NET y las bibliotecas de SQLite para Windows de 64 bits. No requiere Visual Studio ni permisos de administrador.
 
-La publicacion del paquete como archivo de una Release esta pendiente. Una vez publicado, se podra descargar desde [Releases del proyecto](https://github.com/duranjoseemilio/Votacion-Estudiantil-SVDE/releases).
+El paquete de instalación está disponible en [SDVE 1.0](https://github.com/duranjoseemilio/Votacion-Estudiantil-SVDE/releases/tag/v1.0.0). Para descargarlo, abrimos el enlace, buscamos la sección Assets y seleccionamos `Entregable_2_Instalacion.zip`. Debemos elegir ese archivo, no los archivos Source code, que contienen el código fuente.
 
 1. Descargar el ZIP de instalacion y seleccionar Extraer todo.
 2. Abrir la carpeta extraida y ejecutar `Instalar.cmd`.
